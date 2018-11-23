@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Registrate</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="RegistroJS.js">
+            
+        </script>
+    </head>
+    <body>
+        <div style="display: none" id="DivRol">
+            <center>
+            <h1>¿C&oacute;mo deseas registrarte?</h1>
+                <INPUT type="button" id="Usuario" value="Usuario" onclick="Rol1(); Muestra('DivFormulario'); Muestra('DivRol');"> &nbsp;&nbsp;
+                <INPUT type="button" id="Veterinario" value="Veterinario" onclick="Rol2(); Muestra('DivFormulario'); Muestra('DivRol');"> &nbsp;&nbsp;
+                <INPUT type="button" id="Entrenador" value="Entrenador" onclick="Rol3(); Muestra('DivFormulario'); Muestra('DivRol');"> &nbsp;&nbsp;<br><br>
+            </center>
+        </div>
+
+        <div id="DivFormulario">
+            
+            <form action="Reg.jsp" method="POST">
+           
+                <center>
+                <h1>Registrate</h1>
+                <INPUT type="text" name="User" placeholder="Usuario"> <br><br>
+                <INPUT type="text" name="Nombre" placeholder="Nombre"><br><br>
+                <INPUT type="text" name="ApPat" placeholder="Apellido Paterno"><br><br>
+                <INPUT type="text" name="ApMat" placeholder="Apellido Materno"><br><br>
+                <INPUT type="password" name="Pass" placeholder="Contrase&ntilde;a"><br><br>
+                <INPUT type="password" name="PassC" placeholder="Confirmar contrase&ntilde;a"><br><br>
+                <INPUT type="text" name="Email" placeholder="Email"><br><br>         
+                <INPUT type="hidden" id="Rol" value="" name="Rol">
+                <INPUT type="submit" value="Aceptar">
+                </center>
+            </form>
+        </div>
+    </body>
+   
+</html>
